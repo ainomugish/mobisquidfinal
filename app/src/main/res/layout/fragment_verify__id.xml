@@ -1,0 +1,94 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scroll"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="@dimen/ten_dp"
+    tools:context="fragments.Verify_ID">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        app:cardElevation="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:typeface="serif"
+                android:text="We would like to verify your ID. Please select on the list of accepted IDs below and input its number."/>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/ten_dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_box_new"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:layout_marginRight="8dp">
+            <android.support.v7.widget.AppCompatSpinner
+                style="@style/mySpinnerItemStyle"
+                android:id="@+id/sp_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/inp_id"
+            android:layout_marginTop="@dimen/ten_dp">
+            />
+            <EditText
+                android:id="@+id/edit_idnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="ID number"/>
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.ButtonBarLayout
+        android:id="@+id/inp_btn"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:onClick="login"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:textColor="@android:color/white"
+            android:text="Verify"/>
+    </android.support.v7.widget.ButtonBarLayout>
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    tools:context=".activities.Update_Financial">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/main_layout"
+            android:orientation="vertical">
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/person_photo"
+                    android:src="@drawable/ic_warning"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="16dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/person_name"
+                    android:text="Caution"
+                    android:layout_toRightOf="@+id/person_photo"
+                    android:layout_alignParentTop="true"
+                    android:textSize="20sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/note"
+                    android:layout_toRightOf="@+id/person_photo"
+                    android:layout_below="@+id/person_name"
+                    />
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/ten_dp"
+                android:paddingLeft="@dimen/ten_dp"
+                android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="4.5dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date of birth"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/year"
+                        android:layout_width="100dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:hint="Year"
+                        android:inputType="number"
+                        />
+                    <EditText
+                        android:id="@+id/month"
+                        android:gravity="center"
+                        android:layout_width="70dp"
+                        android:layout_marginLeft="@dimen/five_dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Mon"
+                        android:inputType="number"
+                        />
+                    <EditText
+                        android:id="@+id/day"
+                        android:layout_width="70dp"
+                        android:gravity="center"
+                        android:layout_marginLeft="@dimen/five_dp"
+                        android:layout_height="wrap_content"
+                        android:hint="day"
+                        android:inputType="number"
+                        />
+                </LinearLayout>
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+
+                <EditText
+                    android:id="@+id/register_idnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/id_number" >
+                </EditText>
+                </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+                     android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+                <EditText
+                    android:id="@+id/register_pin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Pin e.g 1234"
+                    android:inputType="numberPassword" >
+                </EditText>
+</android.support.design.widget.TextInputLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   android:layout_marginTop="30dp"
+                    android:weightSum="1"
+                    android:orientation="horizontal" >
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:textSize="15dp"
+                        android:clickable="true"
+                        android:onClick="cancel"
+                        android:background="@drawable/cancel_button"
+                        android:text="Cancel" />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:textSize="15dp"
+                        android:layout_weight=".5"
+                        android:onClick="submit"
+                        android:background="@drawable/regesterback"
+                        android:text="Submit" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+       </LinearLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

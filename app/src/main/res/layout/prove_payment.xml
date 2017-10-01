@@ -1,0 +1,161 @@
+    <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/ten_dp"
+    android:paddingRight="@dimen/ten_dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ProvePayment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/ten_dp"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:layout_gravity="center"
+        app:contentPadding="@dimen/five_dp"
+        app:cardElevation="@dimen/five_dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/ten_dp">
+
+
+            <TextView
+                android:id="@+id/counter"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginTop="0dp"
+                android:layout_gravity="center"
+                android:background="@drawable/greenround"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:gravity="center"
+                android:text="Payment Request"
+                android:textStyle="bold"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contentPadding="3dp"
+                app:cardElevation="3dp"
+                app:cardCornerRadius="@dimen/five_dp">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/five_dp">
+                    <com.mobisquid.mobicash.utils.SquareImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/pay"/>
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/five_dp">
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#222"
+                            android:text="From: Kuteesa andrew"/>
+
+                        <TextView
+                            android:id="@+id/amount"
+                            android:layout_weight="1"
+                            android:textColor="#666"
+                            android:typeface="serif"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Amount: 20000" />
+                        <TextView
+                            android:id="@+id/mobile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mobile: 07754990000"/>
+
+                        <TextView
+                            android:id="@+id/details"
+                            android:layout_weight="1"
+                            android:textColor="#666"
+                            android:typeface="serif"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="May 9303 i29323" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:textSize="@dimen/ten_dp"
+                android:text="Note: This will automatically be canceled after 60 seconds"
+                android:textStyle="bold"/>
+     </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/inp_pin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten_dp">
+        <EditText
+            android:id="@+id/pin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"
+            android:hint="Your pin"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/wrapper2"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/cancel_button"
+                android:layout_marginTop="20dp"
+                android:text="Cancel" />
+            <Button
+                android:id="@+id/senddata"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="8dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:background="@drawable/regesterback"
+                android:layout_marginTop="20dp"
+                android:text="Confirm" />
+        </LinearLayout>
+
+</LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+

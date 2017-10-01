@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/five_dp"
+    tools:context=".fragments.Fragment_School">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="@dimen/five_dp"
+        app:cardElevation="@dimen/five_dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <com.mobisquid.mobicash.utils.RectagularImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="@dimen/five_dp"
+                android:src="@drawable/mobicash" />
+
+            <LinearLayout
+                android:id="@+id/toplayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioGroup
+                    android:id="@+id/which_remitance"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+
+                    <RadioButton
+                        android:id="@+id/onthis_number"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_height="wrap_content"
+                        android:text="Domestic" />
+
+                    <RadioButton
+                        android:id="@+id/another"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:text="International remittance" />
+
+
+
+                </RadioGroup>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textnote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="Please provide recipient's number below."/>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inp_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp">
+
+                <EditText
+                    android:id="@+id/editText_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mobile number"
+                    android:ems="10"
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/ten_dp"
+        android:paddingLeft="@dimen/ten_dp"
+        android:paddingRight="@dimen/ten_dp"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:paddingStart="@dimen/ten_dp">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/cancel_button"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/regesterback"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:text="SUBMIT" />
+    </LinearLayout>
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mobisquid.mobicash.fragments.Myqrcode">
+
+   <com.mobisquid.mobicash.utils.SquareImageView
+       android:id="@+id/imageView1"
+       android:layout_width="150dp"
+       android:layout_height="wrap_content"
+       android:layout_centerVertical="true"
+       android:layout_centerInParent="true"/>
+
+   <TextView
+       android:id="@+id/chkrequest"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:paddingRight="@dimen/ten_dp"
+       android:background="@drawable/rounded_right"
+       android:padding="@dimen/five_dp"
+       android:textColor="@android:color/white"
+       android:clickable="true"
+       android:paddingLeft="@dimen/ten_dp"
+       android:layout_marginBottom="2dp"
+       android:text="You can click here incase you didn't receive a requet for the payment"/>
+
+</RelativeLayout>

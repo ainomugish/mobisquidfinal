@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "800247411304",
+    "firebase_url": "https://mobiseller-158021.firebaseio.com",
+    "project_id": "mobiseller-158021",
+    "storage_bucket": "mobiseller-158021.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800247411304:android:0829164a21424da1",
+        "android_client_info": {
+          "package_name": "mobicash.mobiseller.co.za"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800247411304-4sdn5mb9vdf75rj9mgjodg2ifiobc6i8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiuIlOBxfrF40_9a8v5rJSKOmD4e5qemg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800247411304:android:0ec009d8c67ae84c",
+        "android_client_info": {
+          "package_name": "com.mobisquid.mobicash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800247411304-4sdn5mb9vdf75rj9mgjodg2ifiobc6i8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiuIlOBxfrF40_9a8v5rJSKOmD4e5qemg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

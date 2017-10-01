@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <EditText
+        android:id="@+id/et_search_products"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:inputType="text"
+        android:background="@drawable/border"
+        android:hint="Search Products"
+        android:drawableLeft="@drawable/search_icon"
+        android:drawablePadding="10dp"
+        android:imeOptions="actionSearch"
+        android:padding="10dp" />
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:visibility="gone"
+        android:layout_below="@id/et_search_products"
+        android:id="@+id/rv_products"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/tv_no_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="No Product Found"
+        />
+
+</RelativeLayout>

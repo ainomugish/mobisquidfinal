@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/main_layout"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context="com.mobisquid.mobicash.fragments.First_Fragment">
+
+
+            <com.mobisquid.mobicash.utils.RectagularImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/screenlogo"
+                />
+
+
+    <LinearLayout
+        android:id="@+id/frqquestion"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:background="@drawable/regesterback"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Make a tour"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/tour"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:textStyle="bold"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/frqquestion"
+        android:background="@drawable/regesterback"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/ten_dp"
+        android:textColor="@android:color/white"/>
+
+</RelativeLayout>
+
+
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.mobisquid.mobicash.fragments.First_Fragment">
+    <android.support.v7.widget.CardView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:layout_alignParentTop="true"
+        app:cardCornerRadius="@dimen/five_dp"
+        app:cardElevation="@dimen/five_dp"
+        android:layout_centerHorizontal="true">
+        <com.mobisquid.mobicash.utils.SquareImageView
+            android:id="@+id/imageView2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/screenlogo"
+            />
+
+    </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/ten_dp"
+            android:paddingRight="@dimen/ten_dp"
+            android:layout_marginTop="@dimen/twenty_dp"
+            android:layout_below="@+id/image"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:id="@+id/join"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/five_dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:id="@+id/join_img"
+                    android:layout_width="0dp"
+                    android:layout_weight=".2"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rounded_left"
+                    android:gravity="center"
+                    android:layout_gravity="center">
+                    <com.mobisquid.mobicash.utils.SquareImageView
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_create"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".8"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="left"
+                    android:background="@drawable/rounded_right"
+                    android:layout_gravity="center">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Join us"
+                        android:textStyle="bold"
+                        android:textSize="22sp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textColor="@android:color/white"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="If this is for the first time"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="3dp"
+                        android:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/login"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/five_dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:id="@+id/login_img"
+                    android:layout_width="0dp"
+                    android:layout_weight=".2"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rounded_left"
+                    android:gravity="center"
+                    android:layout_gravity="center">
+                    <com.mobisquid.mobicash.utils.SquareImageView
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_login"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".8"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:orientation="vertical"
+                    android:background="@drawable/rounded_right"
+                    android:layout_gravity="center">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Login"
+                        android:textStyle="bold"
+                        android:textSize="22sp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textColor="@android:color/white"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="If you already have an account"
+                        android:gravity="center"
+                        android:layout_marginBottom="3dp"
+                        android:layout_gravity="center"
+                        android:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/supporting"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/five_dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:id="@+id/support_img"
+                    android:layout_width="0dp"
+                    android:layout_weight=".2"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rounded_left"
+                    android:gravity="center"
+                    android:layout_gravity="center">
+                    <com.mobisquid.mobicash.utils.SquareImageView
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_help"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/support"
+                    android:layout_width="0dp"
+                    android:layout_weight=".8"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:orientation="vertical"
+                    android:background="@drawable/rounded_right"
+                    android:layout_gravity="center">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/help_support"
+                        android:textStyle="bold"
+                        android:textSize="22sp"
+                        android:gravity="center"
+                        android:textColor="@android:color/white"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="For any query or support"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="3dp"
+                        android:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    -->

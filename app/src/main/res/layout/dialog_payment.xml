@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:minWidth="350dp"
+    android:background="@drawable/border_payment_dialog"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textColor="@color/app_orange"
+        android:text="Choose your Payment Method"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_light" />
+
+    <ImageView
+        android:id="@+id/iv_mobi"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="?selectableItemBackground"
+        android:src="@drawable/mobi_cash" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_light" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/iv_credit_card"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?selectableItemBackground"
+            android:padding="12dp"
+            android:src="@drawable/credit_card" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/grey_light"
+            />
+        <ImageView
+            android:id="@+id/iv_paypal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?selectableItemBackground"
+            android:src="@drawable/paypal" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/grey_light"
+            />
+        <ImageView
+            android:id="@+id/iv_skyrill"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?selectableItemBackground"
+            android:src="@drawable/skrill" />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_light" />
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Close"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        />
+</LinearLayout>

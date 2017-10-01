@@ -1,0 +1,370 @@
+<resources>
+    <string name="app_name">MobiSquid</string>
+    <string name="number">Phone number</string>
+    <string name="passphoto">
+<![CDATA[
+The processing of your account application may be delayed if you do not submit a photo that meets the requirements below.  To avoid processing delays, we recommend you that if you take the photo yourself with a smartphone camera, the digital image must adhere to the following specifications:<br>the subject should be evenly lit, taken against a plain background, without any harsh shadows or reflections on glasses,<br>·the subject should have a blank expression (no smiling, for example) and they should be face-on to the camera.<br><br>If taken from your gallery or computer, photos must not be digitally enhanced or altered to change your appearance in any way.<br>
+]]>
+</string>
+    <string name="idphoto">
+<![CDATA[
+The processing of your account application may be delayed if you do not submit a photo that meets the requirements below.  To avoid processing delays, we recommend you that if you take the photo yourself with a smartphone camera, the digital image must adhere to the following specifications:<br>the subject should be evenly lit, taken against a plain background, without any harsh shadows or reflections on glass.Take full surface of your identity card.
+]]>
+</string>
+    <string name="proof_residence">
+<![CDATA[
+The processing of your account application may be delayed if you do not submit a photo that meets the requirements below.  To avoid processing delays, we recommend you that if you take the photo yourself with a smartphone camera, the digital image must adhere to the following specifications:<br>the subject should be evenly lit, taken against a plain background, without any harsh shadows or reflections on glass.Make sure that alleast you capture the stamp and signtures on the paper.<br>
+]]>
+</string>
+    <string name="note">Please note that for security purposes this device is not registered to carry out financial services. Please answer the questions below to switch your account to this device.</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="id_number">ID number</string>
+    <string name="help">Help</string>
+    <string name="nice_html">
+<![CDATA[
+<p><b> MCASH ACCOUNT TERMS AND CONDITIONS.</b></p>
+
+<b>1.Agreement and Acceptance</b>
+
+<br>This agreement becomes effective between you and Housing Finance Bank Ltd (“the bank’, ‘we” or “us”) at the time of registering for Mcash Bank
+account or at the time you access the Mcash product, whichever occurs first.<br>
+<br><b>Definitions:</b><br>
+<b>2.“Alerts”</b> mean the customized messages sent as IVR (as defined herein) to the Customer over mobile phones.
+<br><b>3.“MCash Account”</b> shall mean an electronic account opened for a customer upon enrolment for the MCash solution at locations approved by
+Housing Finance Bank,
+<br><b>4.“Customer”</b> means a person who enrols for the m-cash solution and has accepted these Terms & Conditions.
+<br><b>5.“Instructions”</b> shall mean the instructions given to Housing Finance Bank directly or through Agents/aggregators by the Customer through IVR in
+relation to the MCash Account.
+<br><b>6.“Partners “ </b>shall mean establishments, wherever located, which accept payment under the Mcash solution including but not limited to stores,
+shops, restaurants, hotels, airline organizations, websites, mail order advertisers (whether retailers, distributors or manufacturers), mail order outlets
+(whether wholesalers, retailers, distributors or manufacturers) advertised as accepting payment on the Mcash Payment Platform.
+<br><b>7.“IVR”</b> shall mean Interactive Voice Response,
+<br><b>8.“Terms & Conditions” </b>means these Terms & Conditions including any amendments all annexure, schedules, incorporated by reference from time
+to time.
+<br><b>9.“Services” </b>shall mean the products offered by Housing Finance Bank through the m-cash payment solution.
+<br><b>10.“Valid Card”</b> shall mean an unexpir<br>
+<br><b>Terms and conditions</b>
+<br><b>11.Charges:</b> Charges shall accrue on the m-cash account whenever a customer transacts on the Mcash payment Platform.
+<br><b>12.Lodging in Complaints:</b> All complaints about the MCash payment solution shall be reported to the Bank or its Agents as soon as possible for
+attention. The Bank shall upon receipt of any complaint, give feed back to the customer within reasonable time depending on the nature of the
+complaint.
+<br><b>13.Freezing of Accounts:</b> The bank may at any time freeze any account of the customer if there are reasons to believe the MCash account is being used for
+fraudulent/money laundering activities whether those activities be proved or not.
+<br><b>14.Pass Code Protection and Irregularities:</b> A “Pass code” refers to your PIN (Personal Identification Number). You must protect and keep your PIN and/
+or access codes confidential at all times. Please note that it is not safe to store it on your computer. You must report any compromise of your PIN or Pass
+codes to the Bank without delay. You may do this by contacting our Customer Service Centre. Once you notify us to disable your PIN or access code, we
+are entitled to:
+<br>&nbsp</item>a) Reject all instructions received after such notification;
+<br>&nbsp</item>b) Suspend the processing of all instructions not yet executed;
+<br>&nbsp</item>c) Reverse (if possible) all executed transactions with effect from such date and time as we may reasonably determine the unauthorized use to have
+commenced;
+<br>&nbsp</item>d) Deactivate the pass code without further notice;
+Please note that your PIN/Pass code shall be confidential and there will never be a reason for any person including a member of our staff at Customer
+Service Centre to know or ask for your PIN or Pass code. Do not disclose your Pass code to these persons, regardless of whether you called them or they
+called you.
+
+<br><b>15.Interpretation:</b> In these Terms and Conditions the expression, ‘the customer’ shall include any person or persons, firm or corporate body and the
+word “’his “also refers to the female gender.
+<br><b>16.Amendments: </b>Any addition or alteration of these Terms and Conditions made from time to time by the Bank of which has been given to the
+Account Holder shall be binding upon the Account Holder as fully as if the same were contained in these Terms and Conditions.
+<br><b>17.Your Authority:</b> Whenever a customer’s PIN or pass code is entered onto the Mcash payment platform, it shall be deemed as full authority by the
+customer to the Bank to carry any instructions flowing there from.
+<br><b>18.Limits:</b> Housing Finance Bank reserves the right to set transaction limits, the amount and frequency of Payments that a Customer may make on
+the MCash payment platform, without prejudice to the generality of the aforesaid, processing of all the Instructions is subject to the availability of
+free, clear and available funds/limits in the Customer’s m-cash account or Valid Card. In the event of clear funds/limits not being available, Housing
+Finance Bank shall not process the Instructions and shall not make Payments. The Customer understands that Housing Finance Bank shall not be
+liable for any late charges, penalty, loss, damage, expenses, whether direct or indirect, incurred/to be incurred by the Customer in this regard and/
+or the Utilities/Services not being delivered to the Customer by the agents on account of failure to execute Instructions and the Customer hereby
+agrees not to hold Housing Finance Bank liable in this regard.
+<br><b>19.Indemnity: </b>In consideration of Housing Finance Bank agreeing to provide to the Customer the MCash Account, the Customer hereby irrevocably agrees
+to indemnify and keep Housing Finance Bank indemnified, at all times from all losses, damage, costs, legal fees, charges and expenses and consequences
+whatsoever, suffered or incurred by Housing Finance Bank on account of any claims, actions, suits or otherwise instituted by the Customer, or any third party
+whatsoever, arising out of or in connection with the use of the MCash Account and any transactions initiated by the use of the MCash Account, whether
+with or without the knowledge of the Customer, or whether the same have been initiated bona fide or otherwise which transactions, the Customer hereby
+acknowledges, Housing Finance Bank has processed on the Instructions and authority of the Customer in accordance with these Terms & Conditions.
+<br><b>20.Unavailability of MCash solution:</b> We will at all times and for whatever reason, have the sole and exclusive right to suspend or terminate
+the Mcash solution without any prior notification or giving any reasons for such termination or suspension, especially where the Bank finds it
+appropriate to do so or as by may be required by law to take such action. The customer acknowledges and accepts that the Mcash payment
+platform may be unavailable from time to time for any reason, including:
+<br>&nbsp</item>a)technical failure or problems with the communication system itself or our communication system underlying banking systems (the bank
+system);
+<br>&nbsp</item>b)technical failure or problems with a communication system directly or indirectly underlying Mcash payment plat form that is owned or
+controlled by other persons (third party system);
+<br>&nbsp</item>c)Unavailability or telecommunication or electricity services; or other circumstances beyond our control.
+<br>&nbsp</item>d)You undertake in the event of unavailability of Mcash payment platform, to mitigate your potential losses by using any other means of
+communication with us for the duration of the unavailability of banking-cash payment platform.
+<br>&nbsp</item>e)any interruption, malfunction, downtime or other failure of services provided by third parties, including, without limitation, third party
+systems such as the public switched telecommunication service providers, internet service providers, electricity suppliers, local authorities
+and certification authorities;
+<br>&nbsp</item>f)Any event over which we have no direct control.<br>
+<br><b>NOTE:</b> The customer hereby acknowledges that the Bank shall not be liable for any loss arising out of general interruptions with the Internet System
+since the Mcash payment Platform is an internet based payment solution.
+<br><b>21.Disclosure of customer account information</b><br>
+The Bank may disclose details of and relating to the customer’s Account to any credit reference, Agency or other like institutions as it deems
+necessary or as permitted by the Law.
+]]>
+</string>
+    <string-array name="CountryCodes">
+        <item>93,AF</item>
+        <item>355,AL</item>
+        <item>213,DZ</item>
+        <item>376,AD</item>
+        <item>244,AO</item>
+        <item>672,AQ</item>
+        <item>54,AR</item>
+        <item>374,AM</item>
+        <item>297,AW</item>
+        <item>61,AU</item>
+        <item>43,AT</item>
+        <item>994,AZ</item>
+        <item>973,BH</item>
+        <item>880,BD</item>
+        <item>375,BY</item>
+        <item>32,BE</item>
+        <item>501,BZ</item>
+        <item>229,BJ</item>
+        <item>975,BT</item>
+        <item>591,BO</item>
+        <item>387,BA</item>
+        <item>267,BW</item>
+        <item>55,BR</item>
+        <item>673,BN</item>
+        <item>359,BG</item>
+        <item>226,BF</item>
+        <item>95,MM</item>
+        <item>257,BI</item>
+        <item>855,KH</item>
+        <item>237,CM</item>
+        <item>1,CA</item>
+        <item>238,CV</item>
+        <item>236,CF</item>
+        <item>235,TD</item>
+        <item>56,CL</item>
+        <item>86,CN</item>
+        <item>61,CX</item>
+        <item>61,CC</item>
+        <item>57,CO</item>
+        <item>269,KM</item>
+        <item>242,CG</item>
+        <item>243,CD</item>
+        <item>682,CK</item>
+        <item>506,CR</item>
+        <item>385,HR</item>
+        <item>53,CU</item>
+        <item>357,CY</item>
+        <item>420,CZ</item>
+        <item>45,DK</item>
+        <item>253,DJ</item>
+        <item>670,TL</item>
+        <item>593,EC</item>
+        <item>20,EG</item>
+        <item>503,SV</item>
+        <item>240,GQ</item>
+        <item>291,ER</item>
+        <item>372,EE</item>
+        <item>251,ET</item>
+        <item>500,FK</item>
+        <item>298,FO</item>
+        <item>679,FJ</item>
+        <item>358,FI</item>
+        <item>33,FR</item>
+        <item>689,PF</item>
+        <item>241,GA</item>
+        <item>220,GM</item>
+        <item>995,GE</item>
+        <item>49,DE</item>
+        <item>233,GH</item>
+        <item>350,GI</item>
+        <item>30,GR</item>
+        <item>299,GL</item>
+        <item>502,GT</item>
+        <item>224,GN</item>
+        <item>245,GW</item>
+        <item>592,GY</item>
+        <item>509,HT</item>
+        <item>504,HN</item>
+        <item>852,HK</item>
+        <item>36,HU</item>
+        <item>91,IN</item>
+        <item>62,ID</item>
+        <item>98,IR</item>
+        <item>964,IQ</item>
+        <item>353,IE</item>
+        <item>44,IM</item>
+        <item>972,IL</item>
+        <item>39,IT</item>
+        <item>225,CI</item>
+        <item>81,JP</item>
+        <item>962,JO</item>
+        <item>7,KZ</item>
+        <item>254,KE</item>
+        <item>686,KI</item>
+        <item>965,KW</item>
+        <item>996,KG</item>
+        <item>856,LA</item>
+        <item>371,LV</item>
+        <item>961,LB</item>
+        <item>266,LS</item>
+        <item>231,LR</item>
+        <item>218,LY</item>
+        <item>423,LI</item>
+        <item>370,LT</item>
+        <item>352,LU</item>
+        <item>853,MO</item>
+        <item>389,MK</item>
+        <item>261,MG</item>
+        <item>265,MW</item>
+        <item>60,MY</item>
+        <item>960,MV</item>
+        <item>223,ML</item>
+        <item>356,MT</item>
+        <item>692,MH</item>
+        <item>222,MR</item>
+        <item>230,MU</item>
+        <item>262,YT</item>
+        <item>52,MX</item>
+        <item>691,FM</item>
+        <item>373,MD</item>
+        <item>377,MC</item>
+        <item>976,MN</item>
+        <item>382,ME</item>
+        <item>212,MA</item>
+        <item>258,MZ</item>
+        <item>264,NA</item>
+        <item>674,NR</item>
+        <item>977,NP</item>
+        <item>31,NL</item>
+        <item>599,AN</item>
+        <item>687,NC</item>
+        <item>64,NZ</item>
+        <item>505,NI</item>
+        <item>227,NE</item>
+        <item>234,NG</item>
+        <item>683,NU</item>
+        <item>850,KP</item>
+        <item>47,NO</item>
+        <item>968,OM</item>
+        <item>92,PK</item>
+        <item>680,PW</item>
+        <item>507,PA</item>
+        <item>675,PG</item>
+        <item>595,PY</item>
+        <item>51,PE</item>
+        <item>63,PH</item>
+        <item>870,PN</item>
+        <item>48,PL</item>
+        <item>351,PT</item>
+        <item>1,PR</item>
+        <item>974,QA</item>
+        <item>40,RO</item>
+        <item>7,RU</item>
+        <item>250,RW</item>
+        <item>590,BL</item>
+        <item>685,WS</item>
+        <item>378,SM</item>
+        <item>239,ST</item>
+        <item>966,SA</item>
+        <item>221,SN</item>
+        <item>381,RS</item>
+        <item>248,SC</item>
+        <item>232,SL</item>
+        <item>65,SG</item>
+        <item>421,SK</item>
+        <item>386,SI</item>
+        <item>677,SB</item>
+        <item>252,SO</item>
+        <item>27,ZA</item>
+        <item>82,KR</item>
+        <item>34,ES</item>
+        <item>94,LK</item>
+        <item>290,SH</item>
+        <item>508,PM</item>
+        <item>249,SD</item>
+        <item>597,SR</item>
+        <item>268,SZ</item>
+        <item>46,SE</item>
+        <item>41,CH</item>
+        <item>963,SY</item>
+        <item>886,TW</item>
+        <item>992,TJ</item>
+        <item>255,TZ</item>
+        <item>66,TH</item>
+        <item>228,TG</item>
+        <item>690,TK</item>
+        <item>676,TO</item>
+        <item>216,TN</item>
+        <item>90,TR</item>
+        <item>993,TM</item>
+        <item>688,TV</item>
+        <item>971,AE</item>
+        <item>256,UG</item>
+        <item>44,GB</item>
+        <item>380,UA</item>
+        <item>598,UY</item>
+        <item>1,US</item>
+        <item>998,UZ</item>
+        <item>678,VU</item>
+        <item>39,VA</item>
+        <item>58,VE</item>
+        <item>84,VN</item>
+        <item>681,WF</item>
+        <item>967,YE</item>
+        <item>260,ZM</item>
+        <item>263,ZW</item>
+    </string-array>
+    <string name="title_activity_main_screen">MainScreen</string>
+    <string name="qrtime">Qrcode</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="reason">Reason/Details</string>
+    <string name="title_activity_registration">RegistrationActivity</string>
+    <string name="help_support">Support/Help</string>
+    <string name="logout">Logout</string>
+    <string name="home">Home</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="termcondition"><![CDATA[Settings T & C]]></string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="tag_content">content</string>
+    <string name="tag_menu">menu</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_chat_main">Chat</string>
+    <string name="accept_terms"><![CDATA[By clicking register, you accept T&C]]></string>
+    <array name="menuOptions">
+        <item>Chat</item>
+        <item>Broadcast</item>
+        <item>Invite</item>
+        <item>Settings</item>
+        <item>Groups</item>
+
+    </array>
+    <string name="title_activity_mainmenu">Mainmenu</string>
+    <string name="share">Share</string>
+    <string name="title_activity_eshopping">EshoppingActivity</string>
+
+    <!-- ecom stuff-->
+    <string name="back">Back</string>
+    <string name="cancel">Cancel</string>
+    <string name="ph_ok">Ok</string>
+    <string name="ecommerce">E-Commerce</string>
+    <string name="message_fetching_data">Fetching data for categories</string>
+    <string name="addtocart">Add To Cart</string>
+    <string name="infoadd">+ info</string>
+    <string name="infominus">- info</string>
+    <string name="productid" formatted="false">Product ID : %d</string>
+    <string name="description" formatted="false">Description : %s</string>
+    <string name="color" formatted="false">Color : %s</string>
+    <string name="price" formatted="false">Price : %.2f</string>
+    <string name="total">Total:</string>
+    <string name="pleaseadd">Please add items to basket.</string>
+    <string name="sharemessage">Join now http://support.mobisquid.com</string>
+    <string name="no_internet">No Internet Connection</string>
+    <string name="server_not_available">Could not connect to server</string>
+    <string name="not_found">URL not found</string>
+    <string name="internal_server_error">Internal Server Error</string>
+    <string name="title_activity_support">Support</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="waiting">All our agents are currently occupied. Your views are important to us, please wait for the next available agent.</string>
+</resources>

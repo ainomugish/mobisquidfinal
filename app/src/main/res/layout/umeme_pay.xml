@@ -1,0 +1,206 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollviewtouch"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/ten_dp"
+                android:orientation="vertical">
+                <android.support.v7.widget.CardView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    app:cardCornerRadius="@dimen/five_dp"
+                    app:cardElevation="@dimen/five_dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/five_dp"
+                        android:layout_marginRight="@dimen/five_dp"
+                        android:orientation="vertical">
+                <com.mobisquid.mobicash.utils.RectagularImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:transitionName="profile"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:src="@drawable/mobicash" />
+
+
+                <LinearLayout
+                    android:id="@+id/wrapper2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:id="@+id/radgroup_meter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <RadioButton
+                            android:id="@+id/onthis_meter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="My meter"
+                            android:textColor="@color/colorPrimary" />
+
+                        <RadioButton
+                            android:id="@+id/another_meter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Not my meter"
+
+                            android:textColor="@color/colorPrimary" />
+
+
+                    </RadioGroup>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50">
+
+                        <EditText
+                            android:id="@+id/editTex_client"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="0783******(receiver's number)"
+                            android:inputType="number" />
+
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/editText_account"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="meter number eg.2200468100"
+                        android:inputType="numberSigned"
+                        android:textColorHint="@color/colorPrimary" />
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:id="@+id/wrapper32"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/editText_number"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    android:weightSum="100">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/editText_amount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="Amount"
+                            android:inputType="numberSigned"
+                            android:textColorHint="@color/colorPrimary" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/wrapper32"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/editTex_pin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="Pin e.g 1234"
+                            android:inputType="numberPassword"
+                            android:textColorHint="@color/colorPrimary" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/remember_meter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="@dimen/five_dp"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <CheckBox
+                        android:id="@+id/checkBox_electricity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:text="Remember this meter number"
+                        android:textColor="@color/colorPrimary" />
+
+
+                </LinearLayout>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/wrapper2"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="50"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/cancel_button"
+                        android:onClick="cancle_but"
+                        android:text="Cancel" />
+
+                    <Button
+                        android:id="@+id/futurePaymentPurchaseBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:textColor="@android:color/white"
+                        android:layout_marginTop="20dp"
+                        android:textStyle="bold"
+                        android:layout_weight="50"
+                        android:background="@drawable/regesterback"
+                        android:onClick="buyairtime"
+                        android:text="Check" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>

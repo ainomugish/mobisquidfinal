@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff7f00</color>
+    <color name="colorPrimaryDark">#cc6500</color>
+    <color name="colorAccent">#bebebe</color>
+    <color name="colorDark">#858585</color>
+    <color name="transparent">#00000000</color>
+    <color name="text_msg_input">#626262</color>
+    <color name="white">#ffffffff</color>
+
+    <color name="app_orange">#ff7500</color>
+    <color name="app_orange_pressed">#6b3100</color>
+    <color name="red" >#FF4C2C</color>
+
+    <color name="border_color_start">#f9f6f5</color>
+    <color name="border_color_middle">#ffffff</color>
+    <color name="border_color_end">#edf9e0c3</color>
+    <color name="edit_text_border_color">#4A679F</color>
+    <color name="grey">#868383</color>
+    <color name="black">#000000</color>
+    <color name="white_opacity">#e5fafafa</color>
+    <color name="edittextgray">#80000000</color>
+    <color name="edittextborder">#4A679F</color>
+    <color name="grey_light">#ded5d5</color>
+    <color name="text_secondary">#8D8D8D</color>
+
+
+
+</resources>

@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.mobisquid.mobicash.activities.MobistoreApps">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:transitionName="services">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:id="@+id/scrollView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        app:cardCornerRadius="@dimen/five_dp"
+                        app:cardElevation="3dp"
+                        app:contentPadding="3dp">
+
+                        <RelativeLayout
+                            android:id="@+id/air_t"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="airtime">
+
+                            <com.mobisquid.mobicash.utils.SquareImageView
+                                android:id="@+id/aitt"
+                                android:transitionName="profile"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/five_dp"
+                                android:layout_marginStart="@dimen/five_dp"
+                                android:src="@mipmap/ic_airtime" />
+
+                            <LinearLayout
+                                android:id="@+id/airtime"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/aitt"
+                                android:background="@android:color/transparent"
+                                android:orientation="vertical"
+                                android:paddingLeft="7dp"
+                                android:paddingRight="7dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Airtime"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textColor="#222"
+                                    android:textStyle="bold" />
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="You can top up your number or another number on any network."
+                                    android:textColor="#666" />
+
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:clickable="true"
+                        app:cardCornerRadius="@dimen/five_dp"
+                        app:cardElevation="3dp"
+                        app:contentPadding="3dp">
+
+                        <RelativeLayout
+                            android:id="@+id/television"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="television">
+
+                            <com.mobisquid.mobicash.utils.SquareImageView
+                                android:id="@+id/tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:transitionName="profile"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/five_dp"
+                                android:layout_marginStart="@dimen/five_dp"
+                                android:src="@mipmap/ic_tv" />
+
+                            <LinearLayout
+
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/tv"
+                                android:background="@android:color/transparent"
+                                android:orientation="vertical"
+
+                                android:paddingLeft="7dp"
+                                android:paddingRight="7dp">
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Television"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textColor="#222"
+                                    android:textStyle="bold" />
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Pay for your subscriptions using your smartcard number.Or you can watch TV."
+                                    android:textColor="#666" />
+
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:clickable="true"
+                        app:cardCornerRadius="@dimen/five_dp"
+                        app:cardElevation="3dp"
+                        app:contentPadding="3dp">
+
+                        <RelativeLayout
+                            android:id="@+id/electricity_po"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="electricity">
+
+                            <com.mobisquid.mobicash.utils.SquareImageView
+                                android:id="@+id/electricity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:transitionName="profile"
+                                android:layout_marginLeft="@dimen/five_dp"
+                                android:layout_marginStart="@dimen/five_dp"
+                                android:src="@mipmap/ic_electricity" />
+
+                            <LinearLayout
+
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/electricity"
+                                android:background="@android:color/transparent"
+                                android:orientation="vertical"
+
+                                android:paddingLeft="7dp"
+                                android:paddingRight="7dp">
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Electricity"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textColor="#222"
+                                    android:textStyle="bold" />
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Pay for your electricity by using your account number."
+                                    android:textColor="#666" />
+
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:clickable="true"
+                        app:cardCornerRadius="@dimen/five_dp"
+                        app:cardElevation="3dp"
+                        app:contentPadding="3dp">
+
+                        <RelativeLayout
+                            android:id="@+id/e_tax"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="etax">
+
+                            <com.mobisquid.mobicash.utils.SquareImageView
+                                android:id="@+id/etax"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/five_dp"
+                                android:layout_marginStart="@dimen/five_dp"
+                                android:src="@mipmap/ic_gov" />
+
+                            <LinearLayout
+
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/etax"
+                                android:background="@android:color/transparent"
+
+                                android:orientation="vertical"
+                                android:paddingLeft="7dp"
+                                android:paddingRight="7dp"
+
+                                >
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="E-Government"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textColor="#222"
+                                    android:textStyle="bold" />
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Pay for all your government services like tax."
+                                    android:textColor="#666" />
+
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:clickable="true"
+                        app:cardCornerRadius="@dimen/five_dp"
+                        app:cardElevation="3dp"
+                        app:contentPadding="3dp">
+
+                        <RelativeLayout
+                            android:id="@+id/school_fees"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="school">
+
+                            <com.mobisquid.mobicash.utils.SquareImageView
+                                android:id="@+id/sch"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/five_dp"
+                                android:layout_marginStart="@dimen/five_dp"
+                                android:src="@mipmap/ic_school" />
+
+                            <LinearLayout
+
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/sch"
+                                android:background="@android:color/transparent"
+                                android:orientation="vertical"
+                                android:paddingLeft="7dp"
+                                android:paddingRight="7dp"
+
+                                >
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="School"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textColor="#222"
+                                    android:textStyle="bold" />
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Pay for your tuition, your child's fees at one stop."
+                                    android:textColor="#666" />
+
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+
+

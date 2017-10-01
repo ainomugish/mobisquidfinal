@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/rl_main"
+    android:transitionName="eshopping"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_topLay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/app_orange"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/llback"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/fl_cart"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/ib_main_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/tv_main_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/back"
+
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_back_furtherName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:layout_marginStart="@dimen/all_margin_normal"
+                android:text=""
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_actionBar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+        <FrameLayout
+            android:id="@+id/fl_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/basket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="3dp"
+                android:padding="5dp"
+                android:src="@drawable/carts" />
+
+            <TextView
+                android:id="@+id/tv_cart_count"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="top|end"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/all_red_blob"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="8sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_topLay"
+        >
+        <FrameLayout
+            android:id="@+id/fl_fragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_map_top_Container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+        </FrameLayout>
+
+        <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/iv_cart"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/all_red_blob"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/carts"
+            android:visibility="gone" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floating_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+            android:visibility="visible"
+            android:src="@android:drawable/ic_menu_search"
+            android:layout_marginBottom="20dp"
+            />
+    </RelativeLayout>
+</RelativeLayout>

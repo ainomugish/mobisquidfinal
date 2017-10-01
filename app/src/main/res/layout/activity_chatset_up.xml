@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image"
+            android:transitionName="login"
+            android:layout_width="@dimen/img_width_height"
+            android:layout_height="@dimen/img_width_height"
+            android:src="@mipmap/ic_chat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chat"
+            android:textColor="@android:color/white"
+            android:textSize="30dp"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="Hold on tight we set up your account"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+        <com.mobisquid.mobicash.wedget.drawer.views.TypingIndicatorView
+            android:id="@+id/typing_indicator_view_bounce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            app:animateFrequency="800"
+            android:padding="20dp"
+            android:layout_marginTop="30dp"
+            app:animationOrder="lastOneFirst"
+            app:backgroundColor="@color/colorPrimary"
+            app:backgroundType="rounded"
+            app:dotAnimationDuration="2000"
+            app:dotAnimationType="BouncingSliding"
+            app:dotColor="@color/white"
+            app:dotSecondColor="@color/white"
+            app:dotSize="13dp"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/five_dp"
+        android:layout_centerHorizontal="true"
+        android:text="Populating contacts ..."
+        style="@style/text_subtitle"
+        />
+
+</RelativeLayout>

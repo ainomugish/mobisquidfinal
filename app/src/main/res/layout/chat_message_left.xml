@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:id="@+id/wrapper_gr"
+    android:paddingTop="5dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:background="@drawable/balloon_incoming_normal"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/chat_company_reply_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <github.ankushsachdeva.emojicon.EmojiconTextView
+                android:id="@+id/txtMsg_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_centerVertical="true"
+                style="@style/chat_text_message_style"
+                android:paddingLeft="20dp"
+                android:autoLink="web"
+                android:maxWidth="280dp"
+                android:text="Rahul Agrawal is a good boy but he does not know what he wants." />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/time_text"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignBottom="@id/chat_company_reply_text"
+            android:layout_marginLeft="10dp"
+            style="@style/chat_timings"
+            android:paddingRight="10dp"
+            android:textColor="#222"
+            android:paddingBottom="5dp"
+            android:layout_toRightOf="@id/chat_company_reply_text"
+            android:text="" />
+        <TextView
+            android:id="@+id/language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="7sp"
+            android:layout_above="@+id/time_text"
+            android:layout_marginBottom="3dp"
+            android:layout_toRightOf="@id/chat_company_reply_text"
+            android:text=""/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/five_dp"
+    tools:context="com.mobisquid.mobicash.fragments.RecentChat">
+    <LinearLayout
+        android:id="@+id/invite_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="@dimen/five_dp"
+            app:cardUseCompatPadding="true"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/invite"
+                android:padding="3dp"
+                >
+
+                <android.support.design.widget.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:transitionName="profile"
+                    android:id="@+id/list_image"
+                    android:background="@color/colorPrimary"
+                    app:backgroundTint="@color/colorPrimary"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/ten_dp"
+                    android:src="@drawable/ic_person_add_black_30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="16dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/name"
+                    android:text="Invite"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toRightOf="@+id/list_image"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    />
+                <TextView
+                    android:id="@+id/lastmessage"
+                    android:layout_width="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/list_image"
+                    android:layout_below="@+id/name"
+                    android:layout_centerHorizontal="true"
+                    android:padding="4dp"
+                    android:text="Invite some friends to join you on this platform" />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="@dimen/five_dp"
+            app:cardUseCompatPadding="true"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:id="@+id/share"
+                android:padding="3dp"
+                >
+
+                <android.support.design.widget.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:transitionName="profile"
+                    android:id="@+id/list_images"
+                    android:background="@color/colorPrimary"
+                    app:backgroundTint="@color/colorPrimary"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/ten_dp"
+                    android:src="@drawable/ic_share_black_30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="16dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/names"
+                    android:text="Share"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toRightOf="@+id/list_images"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    />
+                <TextView
+                    android:id="@+id/lastmessages"
+                    android:layout_width="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/list_images"
+                    android:layout_below="@+id/names"
+                    android:layout_centerHorizontal="true"
+                    android:padding="4dp"
+                    android:text="Keep the fun moving by sharing to friends" />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/listrecent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:cardCornerRadius="@dimen/five_dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/convo_list"
+                android:layout_width="match_parent"
+                android:divider="@null"
+                android:transcriptMode="alwaysScroll"
+                android:layout_height="match_parent"
+                />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
+
+
+
+

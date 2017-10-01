@@ -1,0 +1,334 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/ten_dp"
+    android:paddingRight="@dimen/ten_dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="@dimen/ten_dp"
+    tools:context="com.mobisquid.mobicash.fragments.TourFragment">
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:layout_marginBottom="@dimen/ten_dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/ten_dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_social"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentPadding="3dp"
+            app:cardElevation="3dp"
+            app:cardCornerRadius="@dimen/five_dp">
+            <LinearLayout
+                android:id="@+id/social"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/five_dp">
+            <com.mobisquid.mobicash.utils.SquareImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_chat"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/five_dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#222"
+                        android:textStyle="bold"
+                        android:text="SocialNet"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:textColor="#666"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Meet new people,Chat and socialize with anyone" />
+
+            </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_finance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentPadding="3dp"
+            android:layout_marginTop="@dimen/five_dp"
+            app:cardElevation="3dp"
+
+            app:cardCornerRadius="@dimen/five_dp">
+            <LinearLayout
+                android:id="@+id/finance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/five_dp">
+                <com.mobisquid.mobicash.utils.SquareImageView
+                    android:id="@+id/imgfnc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:transitionName="login"
+                    android:src="@mipmap/ic_finance"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/five_dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#222"
+                        android:textStyle="bold"
+                        android:text="Finance"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:textColor="#666"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pay merchants, bills, Manage your banking, send/receive money, Moneygram" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_services"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentPadding="3dp"
+            app:cardElevation="3dp"
+            android:clickable="true"
+            android:layout_marginTop="@dimen/five_dp"
+            app:cardCornerRadius="@dimen/five_dp">
+            <LinearLayout
+                android:id="@+id/services"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/five_dp">
+                <com.mobisquid.mobicash.utils.SquareImageView
+                    android:id="@+id/imgservices"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:transitionName="services"
+                    android:src="@mipmap/ic_services"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/five_dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#222"
+                    android:textStyle="bold"
+                    android:text="Services"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:textColor="#666"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Buy Airtime, Electricity, Pay TV, Tickets, Taxes, Schoolfees, etc" />
+
+            </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_business"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentPadding="3dp"
+            app:cardElevation="3dp"
+            android:layout_marginTop="@dimen/five_dp"
+            app:cardCornerRadius="@dimen/five_dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/five_dp">
+            <com.mobisquid.mobicash.utils.SquareImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_business"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/five_dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#222"
+                    android:textStyle="bold"
+                    android:text="MarketPlace"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:textColor="#666"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MarketPlace, become an agent and make money" />
+
+            </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_eshop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentPadding="3dp"
+            app:cardElevation="3dp"
+            android:layout_marginTop="@dimen/five_dp"
+            app:cardCornerRadius="@dimen/five_dp">
+            <LinearLayout
+                android:id="@+id/eshopping"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/five_dp">
+            <com.mobisquid.mobicash.utils.SquareImageView
+                android:id="@+id/image"
+                android:transitionName="eshopping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_shoping"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/five_dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#222"
+                    android:textStyle="bold"
+                    android:text="eShopping"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:textColor="#666"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome to the world of online shopping, Collect and redeem your reward points online" />
+
+            </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_beacon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentPadding="3dp"
+            app:cardElevation="3dp"
+            android:layout_marginTop="@dimen/five_dp"
+            app:cardCornerRadius="@dimen/five_dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/five_dp">
+            <com.mobisquid.mobicash.utils.SquareImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_becone"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/five_dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#222"
+                    android:textStyle="bold"
+                    android:text="ProxiBeam"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:textColor="#666"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="From digital marketing, airport travel info to redeem coupons and special offers." />
+
+            </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_crowpolice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentPadding="3dp"
+            app:cardElevation="3dp"
+            android:layout_marginTop="@dimen/five_dp"
+            app:cardCornerRadius="@dimen/five_dp">
+            <LinearLayout
+                android:id="@+id/crowdpol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/five_dp">
+            <com.mobisquid.mobicash.utils.SquareImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_police"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/five_dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#222"
+                    android:textStyle="bold"
+                    android:text="CrowdPolice"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:textColor="#666"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Place your safety and assets at your fingertips. " />
+
+            </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

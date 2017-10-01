@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="3dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#222"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+       android:layout_alignParentTop="true" />
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/number"
+        android:padding="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="5dp"
+            >
+            <android.support.v7.widget.AppCompatSeekBar
+                android:id="@+id/seekerbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".6"/>
+            <TextView
+                android:id="@+id/counter"
+                android:layout_width="wrap_content"
+                android:text="20"
+                android:layout_gravity="center"
+                android:layout_toRightOf="@+id/seekerbar"
+                android:layout_toEndOf="@+id/seekerbar"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear"
+                android:gravity="center"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:text="Verification code will be sent in a short while"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/edit"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_below="@+id/card"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_code"
+            android:layout_width="match_parent"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#222"
+            android:layout_height="wrap_content"
+            android:hint="Verification code" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.v7.widget.ButtonBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        style="?attr/buttonBarStyle"
+        android:layoutDirection="locale"
+        android:orientation="horizontal"
+        android:backgroundTintMode="src_over"
+        app:allowStacking="@bool/abc_allow_stacked_button_bar"
+        android:layout_alignParentBottom="true"
+        >
+        <Button
+            android:id="@+id/verify"
+            style="?attr/buttonBarPositiveButtonStyle"
+            android:layout_width="match_parent"
+            android:elevation="8dp"
+            android:background="@color/colorPrimary"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:text="Verify"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.ButtonBarLayout>
+
+</RelativeLayout>

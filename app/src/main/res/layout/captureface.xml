@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="fragments.Registration_two">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/touch_layout"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical"
+                    android:layout_marginRight="20dp">
+
+                    <com.mobisquid.mobicash.utils.RectagularImageView
+                        android:id="@+id/my_id_photo"
+                        android:background="@color/colorAccent"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp" />
+
+                </LinearLayout>
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    app:cardElevation="2dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical"
+                    android:layout_marginRight="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                        android:typeface="monospace"
+                        android:text="Take a photo of yourself"/>
+                    <TextView
+                        android:id="@+id/id_photo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginTop="10dp"
+                        />
+                </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+    <RelativeLayout
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/regesterback"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+        <ImageView
+            android:id="@+id/small_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:src="@android:drawable/ic_menu_camera"/>
+
+            <Button
+                android:id="@+id/take_photo"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:text="TAKE PHOTO" />
+
+            <TextView
+                android:id="@+id/nextimage"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:text="May be later"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:clickable="true"
+                android:textSize="18sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"
+
+               />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

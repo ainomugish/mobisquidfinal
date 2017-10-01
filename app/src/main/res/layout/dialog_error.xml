@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:minWidth="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/all_border_primary"
+    android:layout_margin="@dimen/all_margin_normal"
+    android:orientation="vertical"
+   >
+
+    <TextView
+        android:id="@+id/error_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/all_margin_normal"
+        android:layout_marginBottom="@dimen/all_margin_normal"
+        android:gravity="center_horizontal"
+        android:text="Error Message"/>
+
+
+    <Button
+        android:id="@+id/no"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/all_margin_normal"
+        android:text="@string/ph_ok" />
+
+
+</LinearLayout>

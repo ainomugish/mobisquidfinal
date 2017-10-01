@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="anim_duration_long">500</integer>
+
+    <declare-styleable name="DuoDrawerLayout">
+        <attr name="menu" format="reference"/>
+        <attr format="color" name="colorDark"/>
+        <attr name="content" format="reference"/>
+        <attr name="contentScaleClosed"  format="float"/>
+        <attr name="clickToCloseScale" format="float"/>
+        <attr name="contentScaleOpen" format="float"/>
+        <attr name="menuScaleClosed" format="float"/>
+        <attr name="menuScaleOpen" format="float"/>
+        <attr name="menuAlphaClosed" format="float"/>
+        <attr name="menuAlphaOpen" format="float"/>
+        <attr name="marginFactor" format="float"/>
+    </declare-styleable>
+    <declare-styleable name="DuoMenuView">
+        <attr name="header" format="reference"/>
+        <attr name="footer" format="reference"/>
+        <attr name="background" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="TypingIndicatorView">
+        <attr name="dotSize" format="dimension"/>
+        <attr name="dotCount" format="integer"/>
+        <attr name="dotColor" format="color"/>
+        <attr name="dotSecondColor" format="color"/>
+        <attr name="dotHorizontalSpacing" format="dimension"/>
+        <attr name="dotMaxCompressRatio" format="fraction"/>
+        <attr name="dotAnimationDuration" format="integer"/>
+        <attr name="dotAnimationType" format="enum">
+            <enum name="Grow" value="0"/>
+            <enum name="Wink" value="1"/>
+            <enum name="Disappear" value="2"/>
+            <enum name="Sliding" value="3"/>
+            <enum name="BouncingSliding" value="4"/>
+        </attr>
+        <attr name="showBackground" format="boolean"/>
+        <attr name="backgroundColor" format="color"/>
+        <attr name="backgroundType" format="enum">
+            <enum name="square" value="0"/>
+            <enum name="rounded" value="1"/>
+        </attr>
+        <attr name="animateFrequency" format="integer"/>
+        <attr name="animationOrder" format="enum">
+            <enum name="random" value="0"/>
+            <enum name="sequence" value="1"/>
+            <enum name="circular" value="2"/>
+            <enum name="lastOneFirst" value="3"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="AnimButton">
+        <attr name="first" format="reference"/>
+        <attr name="second" format="reference"/>
+        <attr name="duration" format="integer"/>
+    </declare-styleable>
+
+</resources>

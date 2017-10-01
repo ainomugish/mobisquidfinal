@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/grouplayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff2e5"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mobisquid.mobicash.activities.ChatActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/convo_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomlayout"
+        android:layout_marginBottom="@dimen/ten_dp"
+        android:listSelector="@android:color/transparent"
+        android:scrollbarStyle="outsideOverlay" />
+
+
+    <LinearLayout
+        android:id="@+id/bottomlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/five_dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:id="@+id/laymsg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_weight=".8"
+            android:background="@drawable/editwhite"
+            android:gravity="center"
+            android:minHeight="50dp">
+
+            <ImageView
+                android:id="@+id/emojiButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/chat_edit_text1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:clickable="true"
+                android:src="@drawable/ic_msg_panel_smiles" />
+
+            <github.ankushsachdeva.emojicon.EmojiconEditText
+                android:id="@+id/chat_edit_text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@id/emojiButton"
+                android:layout_toLeftOf="@+id/enter_chat1"
+                android:layout_toRightOf="@id/emojiButton"
+                android:layout_toStartOf="@+id/enter_chat1"
+                android:background="@null"
+                android:hint="Type a message"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLines="4"
+                android:paddingLeft="4dp"
+                android:scrollHorizontally="false"
+                android:singleLine="false"
+                android:textSize="18sp"
+                emojicon:emojiconSize="28sp" />
+
+
+            <ImageView
+                android:id="@+id/enter_chat1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/chat_edit_text1"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:paddingEnd="17dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="17dp"
+                android:paddingStart="13dp"
+                android:src="@drawable/ic_attachment" />
+
+        </RelativeLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/animButton"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:onClick="sendMessage"
+            android:layout_weight=".2"
+            android:scaleType="center"
+            android:layout_marginLeft="@dimen/five_dp"
+            android:gravity="center"
+            android:src="@drawable/ic_audio"
+            app:backgroundTint="@color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+
+

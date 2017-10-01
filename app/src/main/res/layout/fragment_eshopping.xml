@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    tools:context="com.mobisquid.mobicash.fragments.EshoppingFragment">
+  <!--  <com.daimajia.slider.library.SliderLayout
+        android:id="@+id/slider"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        custom:pager_animation="Accordion"
+        custom:auto_cycle="true"
+        custom:indicator_visibility="visible"
+        custom:pager_animation_span="1100"
+        android:layout_height="200dp"/>-->
+    <com.mobisquid.mobicash.utils.GridRecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutAnimation="@anim/grid_layout_animation">
+
+    </com.mobisquid.mobicash.utils.GridRecyclerView>
+
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.mobisquid.mobicash.fragments.UnpaidRequests">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/nothingcard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="5dp"
+        android:clickable="true"
+        app:cardElevation="4dp"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="25dp"
+            android:paddingEnd="25dp"
+            android:paddingLeft="25dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/ic_launcher"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:clickable="true"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimary"
+                android:textAllCaps="true"
+                android:typeface="sans"
+                android:id="@+id/text_invite"
+                android:text="No requests at  the moment"/>
+
+
+        </LinearLayout>
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:theme="@style/MyButton"
+                android:text="CLOSE"
+                android:textColor="@color/colorPrimary" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_recent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@android:color/transparent"
+        android:layout_alignParentTop="true"
+        android:scrollbarStyle="outsideOverlay"
+        android:divider="@null" />
+
+</RelativeLayout>

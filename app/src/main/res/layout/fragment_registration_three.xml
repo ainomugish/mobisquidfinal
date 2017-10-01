@@ -1,0 +1,192 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="fragments.Registration_two">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="3dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/touch_layout"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                android:layout_marginRight="10dp">
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_noknmae"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4.5dp">
+                    <EditText
+                        android:id="@+id/register_nokname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapWords"
+                        android:hint="Next of keen name">
+                    </EditText>
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_box_new"
+                    android:layout_marginRight="8dp">
+                    <android.support.v7.widget.AppCompatSpinner
+                        style="@style/mySpinnerItemStyle"
+                        android:id="@+id/sp_nok_select"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        />
+                </LinearLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_nok_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4.5dp">
+                    <EditText
+                        android:id="@+id/register_nok_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                       android:ems="10"
+                        android:hint="NOK number" >
+                    </EditText>
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_box_new"
+                    android:layout_marginBottom="4.5dp"
+                    android:layout_marginRight="8dp">
+                    <android.support.v7.widget.AppCompatSpinner
+                        style="@style/mySpinnerItemStyle"
+                        android:id="@+id/sp_district"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_box_new"
+                    android:layout_marginBottom="4.5dp"
+                    android:layout_marginRight="8dp">
+                    <android.support.v7.widget.AppCompatSpinner
+                        style="@style/mySpinnerItemStyle"
+                        android:id="@+id/sp_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        />
+                </LinearLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_pin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4.5dp">
+
+                    <EditText
+                        android:id="@+id/register_pin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Pin number"
+                        android:inputType="numberPassword"
+                        android:maxLines="1"
+                        />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_pin_comf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4.5dp">
+
+                    <EditText
+                        android:id="@+id/register_pin_comf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Confirm pin number"
+                        android:inputType="numberPassword"
+                        android:maxLines="1"
+                        />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4.5dp">
+
+                    <EditText
+                        android:id="@+id/register_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_password_comf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp">
+
+                    <EditText
+                        android:id="@+id/register_password_comf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Confirm password"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </android.support.v4.widget.NestedScrollView>
+    <LinearLayout
+        android:id="@+id/done_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="4.5dp"
+        android:weightSum="1"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:clickable="true"
+            android:background="@drawable/cancel_button"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:textColor="#FFFFFF"
+            android:layout_weight=".5"
+            android:background="@drawable/regesterback"
+            android:text="NEXT" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
