@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_proxy_cash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Proxy Cash"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/colorPrimary" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_proxy_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Proxy Card"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/colorPrimary" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_proxy_bank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Proxy Bank"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/colorPrimary" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_proxy_fone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="ProxyFone"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/colorPrimary" />
+
+
+</LinearLayout>

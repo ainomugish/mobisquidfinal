@@ -10,7 +10,7 @@
 
     <color name="app_orange">#ff7500</color>
     <color name="app_orange_pressed">#6b3100</color>
-    <color name="red" >#FF4C2C</color>
+    <color name="red">#FF4C2C</color>
 
     <color name="border_color_start">#f9f6f5</color>
     <color name="border_color_middle">#ffffff</color>
@@ -24,6 +24,17 @@
     <color name="grey_light">#ded5d5</color>
     <color name="text_secondary">#8D8D8D</color>
 
+
+    <color name="dark_grey_color">#4a636f</color>
+    <color name="light_blue_500">@color/colorPrimary</color>
+    <color name="blue_gray">#4b636f</color>
+    <color name="light_gray">#f0f6f9</color>
+    <color name="dark_gray">#9baab2</color>
+    <color name="light_gray_bar">#eaf2f5</color>
+
+    <color name="warning_color">#f4511e</color>
+    <color name="hint_color">#42000000</color>
+    <color name="success_color">#009688</color>
 
 
 </resources>

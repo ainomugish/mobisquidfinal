@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Mobisquid.iml" filepath="$PROJECT_DIR$/Mobisquid.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/emijo/emijo.iml" filepath="$PROJECT_DIR$/emijo/emijo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib/lib.iml" filepath="$PROJECT_DIR$/lib/lib.iml" />
+      <module fileurl="file://D:\mobisquid\mobicash-mobisquidfinal-6ca62dc13c6d.iml" filepath="D:\mobisquid\mobicash-mobisquidfinal-6ca62dc13c6d.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mobisquid.iml" filepath="$PROJECT_DIR$/mobisquid.iml" />
       <module fileurl="file://$PROJECT_DIR$/sliderlib/sliderlib.iml" filepath="$PROJECT_DIR$/sliderlib/sliderlib.iml" />
     </modules>
   </component>

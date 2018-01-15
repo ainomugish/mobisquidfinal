@@ -277,15 +277,72 @@
             android:theme="@style/AppTheme" />
         <activity
             android:name=".activities.SupportActivity"
-            android:label="@string/title_activity_support"
             android:hardwareAccelerated="false"
+            android:label="@string/title_activity_support"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".activities.MainSupportChat"
             android:label="Support"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".payment.activities.PaymentActivity"
+            android:label="Payment Methods"
+            android:theme="@style/AppTheme">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".payment.activities.AddCardDetailsActivity"
+            android:label="Add ProxyCard Details"
             android:theme="@style/AppTheme">
 
         </activity>
+        <activity
+            android:name=".payment.activities.AddProxyFoneActivity"
+            android:label="Add ProxyFone Details"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity
+            android:name=".payment.activities.AddCashDetailsActivity"
+            android:label="Add ProxyCash Details"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity
+            android:name=".payment.activities.AddProxyBankActivity"
+            android:label="Add ProxyBank Details"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".payment.activities.ProxyCashDetailsActivity"
+            android:label="ProxyCash"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".payment.activities.ProxyCardDetailsActivity"
+            android:label="ProxyCard"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".payment.activities.ProxyBankDetailsActivity"
+            android:label="ProxyBank"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".payment.activities.ProxyFoneDetailsActivity"
+            android:label="ProxyFone"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".payment.activities.CustomPinActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".payment.qrcodereader.QRCodeReader"
+            android:label="Scan"></activity>
+        <activity
+            android:name=".payment.activities.WendorDetailsActivity"
+            android:label="Details"></activity>
+        <activity
+            android:name=".payment.activities.ChoosePaymentOptionsActivity"
+            android:label="Choose Payment Method"></activity>
     </application>
 
 </manifest>

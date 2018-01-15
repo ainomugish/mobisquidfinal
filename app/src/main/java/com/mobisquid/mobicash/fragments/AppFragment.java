@@ -23,6 +23,8 @@ import android.widget.TextView;
 import com.mobisquid.mobicash.R;
 import com.mobisquid.mobicash.activities.Login;
 import com.mobisquid.mobicash.dbstuff.Apps;
+import com.mobisquid.mobicash.payment.activities.PaymentActivity;
+import com.mobisquid.mobicash.payment.qrcodereader.QRCodeReader;
 import com.mobisquid.mobicash.utils.CircleTransform;
 import com.mobisquid.mobicash.utils.Globals;
 import com.mobisquid.mobicash.utils.Vars;
@@ -34,9 +36,9 @@ import com.squareup.picasso.Picasso;
 public class AppFragment extends Fragment {
     Vars vars;
     View rootview;
-    SwitchCompat sw_social,sw_finance,sw_services,sw_business,sw_eshop,sw_beacon,sw_crowpolice;
+    SwitchCompat sw_social, sw_finance, sw_services, sw_business, sw_eshop, sw_beacon, sw_crowpolice;
     Apps apps;
-
+    TextView tvPayment, tvScan;
 
 
     public AppFragment() {
@@ -49,20 +51,35 @@ public class AppFragment extends Fragment {
                              Bundle savedInstanceState) {
         vars = new Vars(getActivity());
         rootview = inflater.inflate(R.layout.appfragment, container, false);
-        sw_social =(SwitchCompat) rootview.findViewById(R.id.sw_social);
-        sw_finance =(SwitchCompat) rootview.findViewById(R.id.sw_finance);
-        sw_services =(SwitchCompat) rootview.findViewById(R.id.sw_services);
-        sw_business =(SwitchCompat) rootview.findViewById(R.id.sw_business);
-        sw_eshop =(SwitchCompat) rootview.findViewById(R.id.sw_eshop);
-        sw_beacon =(SwitchCompat) rootview.findViewById(R.id.sw_beacon);
-        sw_crowpolice =(SwitchCompat) rootview.findViewById(R.id.sw_crowdpolice);
+        sw_social = (SwitchCompat) rootview.findViewById(R.id.sw_social);
+        sw_finance = (SwitchCompat) rootview.findViewById(R.id.sw_finance);
+        sw_services = (SwitchCompat) rootview.findViewById(R.id.sw_services);
+        sw_business = (SwitchCompat) rootview.findViewById(R.id.sw_business);
+        sw_eshop = (SwitchCompat) rootview.findViewById(R.id.sw_eshop);
+        sw_beacon = (SwitchCompat) rootview.findViewById(R.id.sw_beacon);
+        sw_crowpolice = (SwitchCompat) rootview.findViewById(R.id.sw_crowdpolice);
+        tvScan = (TextView) rootview.findViewById(R.id.tvScanQRCode);
 
-        if(getArguments()!=null){
+        tvScan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), QRCodeReader.class));
+            }
+        });
+        tvPayment = (TextView) rootview.findViewById(R.id.tvPayment);
+        tvPayment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), PaymentActivity.class));
+            }
+        });
+
+        if (getArguments() != null) {
 
         }
-        if(!Apps.listAll(Apps.class).isEmpty()){
+        if (!Apps.listAll(Apps.class).isEmpty()) {
 
-            apps = Apps.findById(Apps.class,1);
+            apps = Apps.findById(Apps.class, 1);
             sw_social.setChecked(apps.isSocial());
             sw_finance.setChecked(apps.isFinance());
             sw_services.setChecked(apps.isServices());
@@ -72,8 +89,6 @@ public class AppFragment extends Fragment {
             sw_crowpolice.setChecked(apps.isCrowdpolice());
 
         }
-
-
 
 
         getActivity().findViewById(R.id.fab).setOnClickListener(new View.OnClickListener() {
@@ -114,7 +129,7 @@ public class AppFragment extends Fragment {
         sw_social.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                vars.log("active===="+isChecked);
+                vars.log("active====" + isChecked);
                 apps.setSocial(isChecked);
                 apps.update();
 
@@ -123,7 +138,7 @@ public class AppFragment extends Fragment {
         sw_finance.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                vars.log("active===="+isChecked);
+                vars.log("active====" + isChecked);
                 apps.setFinance(isChecked);
                 apps.update();
 
@@ -132,7 +147,7 @@ public class AppFragment extends Fragment {
         sw_services.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                vars.log("active===="+isChecked);
+                vars.log("active====" + isChecked);
                 apps.setServices(isChecked);
                 apps.update();
 
@@ -141,7 +156,7 @@ public class AppFragment extends Fragment {
         sw_business.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                vars.log("active===="+isChecked);
+                vars.log("active====" + isChecked);
                 apps.setBusiness(isChecked);
                 apps.update();
 
@@ -150,7 +165,7 @@ public class AppFragment extends Fragment {
         sw_eshop.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                vars.log("active===="+isChecked);
+                vars.log("active====" + isChecked);
                 apps.setEshop(isChecked);
                 apps.update();
 
@@ -159,7 +174,7 @@ public class AppFragment extends Fragment {
         sw_beacon.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                vars.log("active===="+isChecked);
+                vars.log("active====" + isChecked);
                 apps.setBeacon(isChecked);
                 apps.update();
 
@@ -168,7 +183,7 @@ public class AppFragment extends Fragment {
         sw_crowpolice.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                vars.log("active===="+isChecked);
+                vars.log("active====" + isChecked);
                 apps.setCrowdpolice(isChecked);
                 apps.update();
 
@@ -182,13 +197,13 @@ public class AppFragment extends Fragment {
     @Override
     public void onPause() {
         super.onPause();
-        Globals.whichuser="";
+        Globals.whichuser = "";
     }
 
     @Override
     public void onResume() {
         super.onResume();
-        Globals.whichuser="welcome";
+        Globals.whichuser = "welcome";
         Toolbar toolbar = (Toolbar) getActivity().findViewById(R.id.toolbar);
         toolbar.setTitle("Mobisquid-Welcome");
     }

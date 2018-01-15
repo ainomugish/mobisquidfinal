@@ -9,99 +9,112 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.Volley;
+import com.github.omadahealth.lollipin.lib.managers.LockManager;
 import com.google.gson.Gson;
-
+import com.mobisquid.mobicash.R;
+import com.mobisquid.mobicash.payment.activities.CustomPinActivity;
+import com.mobisquid.mobicash.payment.activities.ProxyCashDetailsActivity;
 
 
 public class AppController extends com.orm.SugarApp {
-	public AppController(){
+    public AppController() {
 
-	}
-	public static volatile Handler applicationHandler = null;
-	private static AppController mInstance;
-	private RequestQueue mRequestQueue;
-	private MyPreferenceManager pref;
-	private ImageLoader mImageLoader;
-	private static Context mCtx;
+    }
 
-	public Gson gson;
+    public static volatile Handler applicationHandler = null;
+    private static AppController mInstance;
+    private RequestQueue mRequestQueue;
+    private MyPreferenceManager pref;
+    private ImageLoader mImageLoader;
+    private static Context mCtx;
 
-	public boolean wsConnected = false;
+    public Gson gson;
 
-	//TO STOP CHAT NOFITICAITON
-	public boolean inChat = false;
+    public boolean wsConnected = false;
 
-	@Override
-	public void onCreate() {
-		super.onCreate();
-		// SystemClock.sleep(TimeUnit.SECONDS.toMillis(3));
-		mInstance = this;
-		applicationHandler = new Handler(getInstance().getMainLooper());
+    //TO STOP CHAT NOFITICAITON
+    public boolean inChat = false;
 
-		mCtx = mInstance;
-		mRequestQueue = getRequestQueue();
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        // SystemClock.sleep(TimeUnit.SECONDS.toMillis(3));
+        mInstance = this;
+        applicationHandler = new Handler(getInstance().getMainLooper());
 
-		gson = new Gson();
+        mCtx = mInstance;
+        mRequestQueue = getRequestQueue();
+
+        gson = new Gson();
 
 
-		mImageLoader = new ImageLoader(mRequestQueue,
-				new ImageLoader.ImageCache() {
-					private final LruCache<String, Bitmap>
-							cache = new LruCache<String, Bitmap>(20);
+        mImageLoader = new ImageLoader(mRequestQueue,
+                new ImageLoader.ImageCache() {
+                    private final LruCache<String, Bitmap>
+                            cache = new LruCache<String, Bitmap>(20);
 
-					@Override
-					public Bitmap getBitmap(String url) {
-						return cache.get(url);
-					}
+                    @Override
+                    public Bitmap getBitmap(String url) {
+                        return cache.get(url);
+                    }
 
-					@Override
-					public void putBitmap(String url, Bitmap bitmap) {
-						cache.put(url, bitmap);
-					}
-				});
-	}
+                    @Override
+                    public void putBitmap(String url, Bitmap bitmap) {
+                        cache.put(url, bitmap);
+                    }
+                });
 
-	public static synchronized AppController getInstance() {
+        LockManager<CustomPinActivity> lockManager = LockManager.getInstance();
+        lockManager.enableAppLock(this, CustomPinActivity.class);
+        //lockManager.getAppLock().setTimeout(10000);
+        lockManager.getAppLock().setLogoId(R.mipmap.ic_launcher);
+    }
 
-		return mInstance;
-	}
+    public static synchronized AppController getInstance() {
 
-	public RequestQueue getRequestQueue() {
-		if (mRequestQueue == null) {
+        return mInstance;
+    }
 
-			mRequestQueue = Volley.newRequestQueue(mCtx.getApplicationContext());
-		}
-		return mRequestQueue;
-	}
+    public RequestQueue getRequestQueue() {
+        if (mRequestQueue == null) {
 
-	public <T> void addToRequestQueue(Request<T> req) {
-		getRequestQueue().add(req);
-	}
-	public <T> void addRequest(Request<T> request, String tag) {
-		request.setTag(tag);
-		getRequestQueue().add(request);
-	}
+            mRequestQueue = Volley.newRequestQueue(mCtx.getApplicationContext());
+        }
+        return mRequestQueue;
+    }
 
-	public <T> void addRequest(Request<T> request) {
-		addRequest(request);
-	}
-	public void cancelPendingRequests(Object tag) {
-		if (mRequestQueue != null) {
-			mRequestQueue.cancelAll(tag);
-		}
-	}
-	public ImageLoader getImageLoader() {
-		getRequestQueue();
-		if (mImageLoader == null) {
-			mImageLoader = new ImageLoader(this.mRequestQueue,
-					new LruBitmapCache());
-		}
-		return this.mImageLoader;
-	}
-	public MyPreferenceManager getPrefManager(Context context) {
-		if (pref == null) {
-			pref = new MyPreferenceManager(context);
-		}
-		return pref;
-	}
+    public <T> void addToRequestQueue(Request<T> req) {
+        getRequestQueue().add(req);
+    }
+
+    public <T> void addRequest(Request<T> request, String tag) {
+        request.setTag(tag);
+        getRequestQueue().add(request);
+    }
+
+    public <T> void addRequest(Request<T> request) {
+        addRequest(request);
+    }
+
+    public void cancelPendingRequests(Object tag) {
+        if (mRequestQueue != null) {
+            mRequestQueue.cancelAll(tag);
+        }
+    }
+
+    public ImageLoader getImageLoader() {
+        getRequestQueue();
+        if (mImageLoader == null) {
+            mImageLoader = new ImageLoader(this.mRequestQueue,
+                    new LruBitmapCache());
+        }
+        return this.mImageLoader;
+    }
+
+    public MyPreferenceManager getPrefManager(Context context) {
+        if (pref == null) {
+            pref = new MyPreferenceManager(context);
+        }
+        return pref;
+    }
 }

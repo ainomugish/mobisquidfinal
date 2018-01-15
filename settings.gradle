@@ -1,1 +1,1 @@
-include ':app', ':sliderlib', ':emijo'
+include ':app', ':sliderlib', ':emijo', ':lib'

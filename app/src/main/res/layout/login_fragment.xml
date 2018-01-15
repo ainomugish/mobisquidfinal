@@ -2,14 +2,14 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
     android:id="@+id/main_layout"
-    android:background="@drawable/background"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
     <android.support.v4.widget.NestedScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
-
 
         <RelativeLayout
             android:id="@+id/main"
@@ -18,63 +18,63 @@
 
             <com.mobisquid.mobicash.utils.RectagularImageView
                 android:id="@+id/image"
-                android:transitionName="login"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
-                android:layout_alignParentTop="true"
                 android:layout_marginTop="30dp"
-                android:layout_height="wrap_content"
                 android:src="@drawable/screenlogo"
-                />
+                android:transitionName="login" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingLeft="@dimen/ten_dp"
-                android:paddingRight="@dimen/ten_dp"
-                android:layout_marginTop="@dimen/five_dp"
                 android:layout_below="@+id/image"
-                android:orientation="vertical">
+                android:layout_marginTop="@dimen/five_dp"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/ten_dp"
+                android:paddingRight="@dimen/ten_dp">
+
                 <LinearLayout
-                    android:clickable="true"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
-                    android:padding="@dimen/five_dp"
-                    android:orientation="vertical">
+                    android:clickable="true"
+                    android:orientation="vertical"
+                    android:padding="@dimen/five_dp">
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Social"
-                        android:textStyle="bold"
-                        android:textColor="@android:color/white"
-                        android:typeface="monospace"
+                        android:layout_gravity="center"
                         android:gravity="center"
-                        android:layout_gravity="center" />
-
+                        android:text="Social"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:typeface="monospace" />
 
 
                     <android.support.design.widget.TextInputLayout
                         android:id="@+id/inp_username"
                         android:layout_width="match_parent"
-                        android:background="@drawable/roundedtext"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/roundedtext">
 
                         <EditText
                             android:id="@+id/username"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginRight="@dimen/ten_dp"
                             android:layout_marginLeft="@dimen/ten_dp"
+                            android:layout_marginRight="@dimen/ten_dp"
                             android:background="@android:color/transparent"
-                            android:inputType="text"
-                            android:hint="Username">
-                            <requestFocus/>
-                        </EditText>
+                            android:hint="Username"
+                            android:inputType="text">
 
+                            <requestFocus />
+                        </EditText>
 
 
                     </android.support.design.widget.TextInputLayout>
@@ -83,56 +83,57 @@
                         android:id="@+id/inp_password"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/roundedtext"
-                        android:layout_marginTop="@dimen/ten_dp">
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:background="@drawable/roundedtext">
 
                         <EditText
                             android:id="@+id/password"
-                            android:layout_marginRight="@dimen/ten_dp"
-                            android:layout_marginLeft="@dimen/ten_dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="Password"
+                            android:layout_marginLeft="@dimen/ten_dp"
+                            android:layout_marginRight="@dimen/ten_dp"
                             android:background="@android:color/transparent"
+                            android:hint="Password"
                             android:inputType="textPassword" />
                     </android.support.design.widget.TextInputLayout>
 
                     <LinearLayout
 
-                        android:clickable="true"
-                        android:layout_marginTop="@dimen/ten_dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:clickable="true"
                         android:gravity="center"
                         android:orientation="horizontal">
+
                         <Button
                             android:id="@+id/join"
                             android:layout_width="0dp"
-                            android:layout_weight="1"
                             android:layout_height="wrap_content"
-                            android:text="Join us"
-                            android:layout_marginLeft="20dp"
-                            android:textStyle="bold"
-                            android:layout_marginRight="20dp"
-                            android:gravity="center"
-                            android:background="@drawable/regesterback"
                             android:layout_gravity="center"
-                            android:textColor="@android:color/white"/>
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/regesterback"
+                            android:gravity="center"
+                            android:text="Join us"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold" />
 
                         <Button
                             android:id="@+id/login"
                             android:layout_width="0dp"
-                            android:layout_weight="1"
                             android:layout_height="wrap_content"
-                            android:text="Login"
+                            android:layout_gravity="center"
                             android:layout_marginLeft="20dp"
                             android:layout_marginRight="20dp"
-                            android:textStyle="bold"
-                            android:gravity="center"
+                            android:layout_weight="1"
                             android:background="@drawable/regesterback"
-                            android:layout_gravity="center"
-                            android:textColor="@android:color/white"/>
+                            android:gravity="center"
+                            android:text="Login"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold" />
 
                     </LinearLayout>
 
@@ -142,35 +143,37 @@
                     android:id="@+id/forgot"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:textColor="@android:color/white"
-                    android:padding="@dimen/five_dp"
+                    android:layout_gravity="center"
                     android:layout_marginTop="@dimen/five_dp"
                     android:gravity="center"
-                    android:layout_gravity="center"
-                    android:text="Forgot Password/username"/>
+                    android:padding="@dimen/five_dp"
+                    android:text="Forgot Password/username"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/terms"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:textColor="@android:color/white"
-                    android:padding="@dimen/five_dp"
+                    android:layout_gravity="center"
                     android:layout_marginTop="@dimen/five_dp"
                     android:gravity="center"
-                    android:layout_gravity="center"
-                    android:text="Terms and Conditions"/>
+                    android:padding="@dimen/five_dp"
+                    android:text="Terms and Conditions"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
             </LinearLayout>
 
         </RelativeLayout>
     </android.support.v4.widget.NestedScrollView>
+
     <LinearLayout
         android:id="@+id/frqquestion"
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
         android:background="@drawable/frqasked"
-        android:layout_alignParentBottom="true">
+        android:orientation="horizontal">
 
     </LinearLayout>
 

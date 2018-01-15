@@ -18,8 +18,8 @@ public class ApiClient {
     private static Retrofit retrofit = null;
     private static Retrofit retrofitFiniacial = null;
 
-    public static final String BASE_URL_ECOMMERCE="http://52.38.75.235:8080";
-    public static final String BASE_URL_FINIACIAL="http://test.mcash.rw";
+    public static final String BASE_URL_ECOMMERCE = "http://52.38.75.235:8080";
+    public static final String BASE_URL_FINIACIAL = "http://test.mcash.rw";
 
     final static OkHttpClient okHttpClient = new OkHttpClient.Builder()
             .readTimeout(60, TimeUnit.SECONDS)
@@ -49,7 +49,7 @@ public class ApiClient {
         return retrofit;
     }
 
-    public static Retrofit getRetrofitFiniacial(){
+    public static Retrofit getRetrofitFiniacial() {
         if (retrofitFiniacial == null) {
             retrofitFiniacial = new Retrofit.Builder()
                     .baseUrl(BASE_URL_FINIACIAL)
@@ -60,7 +60,7 @@ public class ApiClient {
     }
 
 
-    public static IApiInterface getApiClient(){
+    public static IApiInterface getApiClient() {
         return getClient().create(IApiInterface.class);
     }
 }
